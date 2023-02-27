@@ -1,0 +1,99 @@
+* NGSPICE file created from inverter.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_H3H3JC a_n275_n274# a_n173_n100# a_15_n100# a_n33_122#
++ a_111_n100# a_n81_n100# a_n129_n188# a_63_n188#
+X0 a_15_n100# a_n33_122# a_n81_n100# a_n275_n274# sky130_fd_pr__nfet_01v8 ad=3.3e+11p pd=2.66e+06u as=3.3e+11p ps=2.66e+06u w=1e+06u l=150000u
+X1 a_111_n100# a_63_n188# a_15_n100# a_n275_n274# sky130_fd_pr__nfet_01v8 ad=3.1e+11p pd=2.62e+06u as=0p ps=0u w=1e+06u l=150000u
+X2 a_n81_n100# a_n129_n188# a_n173_n100# a_n275_n274# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=3.1e+11p ps=2.62e+06u w=1e+06u l=150000u
+C0 a_111_n100# a_15_n100# 0.06fF
+C1 a_n81_n100# a_n33_122# 0.00fF
+C2 a_15_n100# a_n173_n100# 0.02fF
+C3 a_63_n188# a_n129_n188# 0.03fF
+C4 a_63_n188# a_n33_122# 0.01fF
+C5 a_111_n100# a_n129_n188# 0.00fF
+C6 a_n173_n100# a_n129_n188# 0.00fF
+C7 a_111_n100# a_n33_122# 0.00fF
+C8 a_n81_n100# a_63_n188# 0.00fF
+C9 a_n173_n100# a_n33_122# 0.00fF
+C10 a_111_n100# a_n81_n100# 0.02fF
+C11 a_n81_n100# a_n173_n100# 0.06fF
+C12 a_15_n100# a_n129_n188# 0.00fF
+C13 a_111_n100# a_63_n188# 0.00fF
+C14 a_15_n100# a_n33_122# 0.00fF
+C15 a_n173_n100# a_63_n188# 0.00fF
+C16 a_n81_n100# a_15_n100# 0.06fF
+C17 a_111_n100# a_n173_n100# 0.00fF
+C18 a_n129_n188# a_n33_122# 0.01fF
+C19 a_15_n100# a_63_n188# 0.00fF
+C20 a_n81_n100# a_n129_n188# 0.00fF
+C21 a_111_n100# a_n275_n274# 0.09fF
+C22 a_15_n100# a_n275_n274# 0.04fF
+C23 a_n81_n100# a_n275_n274# 0.05fF
+C24 a_n173_n100# a_n275_n274# 0.11fF
+C25 a_63_n188# a_n275_n274# 0.19fF
+C26 a_n129_n188# a_n275_n274# 0.19fF
+C27 a_n33_122# a_n275_n274# 0.19fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_3YVXDD a_15_n200# a_111_n200# a_n129_n297# a_63_n297#
++ a_n81_n200# w_n311_n419# a_n33_231# a_n173_n200# VSUBS
+X0 a_111_n200# a_63_n297# a_15_n200# w_n311_n419# sky130_fd_pr__pfet_01v8 ad=6.2e+11p pd=4.62e+06u as=6.6e+11p ps=4.66e+06u w=2e+06u l=150000u
+X1 a_n81_n200# a_n129_n297# a_n173_n200# w_n311_n419# sky130_fd_pr__pfet_01v8 ad=6.6e+11p pd=4.66e+06u as=6.2e+11p ps=4.62e+06u w=2e+06u l=150000u
+X2 a_15_n200# a_n33_231# a_n81_n200# w_n311_n419# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+C0 a_n173_n200# a_111_n200# 0.00fF
+C1 a_n81_n200# a_n173_n200# 0.10fF
+C2 a_n173_n200# a_n129_n297# 0.00fF
+C3 a_15_n200# a_111_n200# 0.10fF
+C4 a_n81_n200# a_15_n200# 0.09fF
+C5 a_n33_231# w_n311_n419# 0.12fF
+C6 a_n129_n297# a_15_n200# 0.00fF
+C7 w_n311_n419# a_111_n200# 0.10fF
+C8 a_n81_n200# w_n311_n419# 0.04fF
+C9 a_n129_n297# w_n311_n419# 0.08fF
+C10 a_63_n297# a_n33_231# 0.01fF
+C11 a_n173_n200# a_15_n200# 0.04fF
+C12 a_63_n297# a_111_n200# 0.00fF
+C13 a_n81_n200# a_63_n297# 0.00fF
+C14 a_63_n297# a_n129_n297# 0.03fF
+C15 a_n173_n200# w_n311_n419# 0.15fF
+C16 a_n33_231# a_111_n200# 0.00fF
+C17 a_n81_n200# a_n33_231# 0.00fF
+C18 a_15_n200# w_n311_n419# 0.05fF
+C19 a_n129_n297# a_n33_231# 0.01fF
+C20 a_n81_n200# a_111_n200# 0.04fF
+C21 a_n129_n297# a_111_n200# 0.00fF
+C22 a_63_n297# a_n173_n200# 0.00fF
+C23 a_n81_n200# a_n129_n297# 0.01fF
+C24 a_63_n297# a_15_n200# 0.00fF
+C25 a_n173_n200# a_n33_231# 0.00fF
+C26 a_63_n297# w_n311_n419# 0.08fF
+C27 a_n33_231# a_15_n200# 0.00fF
+C28 a_111_n200# VSUBS 0.04fF
+C29 a_15_n200# VSUBS 0.03fF
+C30 a_n81_n200# VSUBS 0.03fF
+C31 a_n173_n200# VSUBS 0.04fF
+C32 a_63_n297# VSUBS 0.08fF
+C33 a_n129_n297# VSUBS 0.08fF
+C34 a_n33_231# VSUBS 0.08fF
+C35 w_n311_n419# VSUBS 2.24fF
+.ends
+
+.subckt inverter in out vdd vss
+XXM1 vss out out in vss vss in in sky130_fd_pr__nfet_01v8_H3H3JC
+XXM2 vdd out in in out vdd in vdd vss sky130_fd_pr__pfet_01v8_3YVXDD
+C0 vdd out 0.34fF
+C1 in vdd 0.41fF
+C2 vss vdd 0.12fF
+C3 vdd m1_864_1680# 0.00fF
+C4 in out 0.35fF
+C5 vss out 0.45fF
+C6 in vss 0.31fF
+C7 out m1_864_1680# 0.04fF
+C8 in m1_864_1680# 0.00fF
+C9 m1_864_1680# 0 0.04fF $ **FLOATING
+C10 out 0 0.64fF
+C11 in 0 1.33fF
+C12 vdd 0 2.64fF
+C13 vss 0 0.42fF
+.ends
+

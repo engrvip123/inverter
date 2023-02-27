@@ -1,0 +1,24 @@
+** sch_path: /home/vipul/inverter/xschem/inverter_tb.sch
+**.subckt inverter_tb out
+*.PININFO out:O
+***x1 vdd inp out GND inverter
+x1 inp out vdd GND inverter
+VDD vdd GND 1.8
+Vinp inp GND PWL(0 0 200n 0 300n 1.8 500n 1.8 600n 0)
+**** begin user architecture code
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+.control
+tran 1n 1u
+plot V(inp) V(out)
+.endc
+
+**** end user architecture code
+**.ends
+
+.include inverter.spice
+
+.GLOBAL GND
+.end
